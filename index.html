@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Chikuu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- SCENE 0 : INTRO -->
+<div id="scene0" class="scene">
+  <h1 class="title">HAPPY BIRTHDAY CHIKUU ❤️</h1>
+</div>
+
+<!-- SCENE 1 : CAKE -->
+<div id="scene1" class="scene hidden">
+  <video id="cakeVideo" src="videos/cake.mp4" autoplay loop muted></video>
+  <p class="hint">Cut the cake 🎂</p>
+</div>
+
+<!-- SCENE 2 : GIFT QUESTION -->
+<div id="scene2" class="scene hidden">
+  <h2>Gift chahiye?? 🤭</h2>
+
+  <div class="choice">
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <img src="images/gift.png" id="gift" class="hidden">
+  <img src="images/runner.png" id="runner" class="hidden">
+</div>
+
+<!-- SCENE 3 : LETTER -->
+<div id="scene3" class="scene hidden letterScene">
+
+  <div class="memories top">
+    <img src="images/memory1.jpg">
+    <img src="images/memory2.jpg">
+    <img src="images/memory3.jpg">
+  </div>
+
+  <div class="letterBox">
+    <p id="wishText"></p>
+    <button id="nextToBouquet">Next</button>
+  </div>
+
+  <div class="memories bottom">
+    <img src="images/memory4.jpg">
+    <img src="images/memory5.jpg">
+    <img src="images/memory6.jpg">
+  </div>
+
+</div>
+
+<!-- SCENE 4 : BOUQUET + HUG -->
+<div id="scene4" class="scene hidden">
+  <img src="images/bouquet.png" class="bouquet">
+  <img src="images/hug.gif" class="hug">
+
+  <p class="message">
+    You matter more than you know 🤍<br>
+    Asli wala gift mil jaayega jaldi
+  </p>
+
+  <button id="finalNext">Next</button>
+</div>
+
+<!-- SCENE 5 : SAE VIDEO -->
+<div id="scene5" class="scene hidden">
+  <video id="saeVideo" src="videos/sae.mp4" playsinline></video>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
